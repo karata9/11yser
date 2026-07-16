@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خيرات الرافدين للعقارات جصان</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-area">
+                <h1>خيرات الرافدين</h1>
+                <p class="subtitle">للعقارات جصان</p>
+                <p class="manager">بإدارة علي كامل كاظم</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="property-search-input" placeholder="ابحث عن عقار، منطقة...">
+                <button class="search-btn" id="property-search-btn" type="button">بحث</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner-section" id="banner-section" aria-label="بنرات الإعلانات">
+        <div class="banner-slider" id="banner-slider"></div>
+        <div class="banner-dots" id="banner-dots"></div>
+    </section>
+
+    <section class="stats-container">
+        <div class="stat-card available">
+            <i class="fas fa-home"></i>
+            <div>
+                <span class="stat-title">المتاحة</span>
+                <h2 id="available-count">4</h2>
+            </div>
+        </div>
+        <div class="stat-card sold">
+            <i class="fas fa-chart-bar"></i>
+            <div>
+                <span class="stat-title">المباعة</span>
+                <h2 id="sold-count">1</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="areas-section">
+        <h3>تصفح بالمناطق</h3>
+        <div class="areas-slider" id="areas-container">
+            <button class="area-btn active">الكل</button>
+            <button class="area-btn">حي الزهراء</button>
+            <button class="area-btn">حي العباس</button>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h3>كل العقارات</h3>
+        <div class="slider-container" id="slider-container">
+            </div>
+    </section>
+
+    <section class="investment-section app-view" id="investment-view" hidden>
+        <div class="investment-card">
+            <div class="investment-orbit" aria-hidden="true">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h2>قسم الاستثمار</h2>
+            <div class="investment-panel">
+                <span class="investment-badge">قريباً - تحت التطوير</span>
+                <p class="investment-copy">نعمل على تجهيز منصة استثمارية متكاملة تتيح لك فرصاً ذهبية في سوق العقارات.</p>
+                <div class="investment-benefits">
+                    <article class="investment-benefit">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h3>عائد استثماري مضمون</h3>
+                            <p>فرص مدروسة بعناية لتحقيق أفضل العوائد الممكنة.</p>
+                        </div>
+                    </article>
+                    <article class="investment-benefit">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h3>استثمار آمن وموثوق</h3>
+                            <p>عمليات موثقة ومضمونة قانونياً من قبل مكتبنا.</p>
+                        </div>
+                    </article>
+                    <article class="investment-benefit">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>
+                            <h3>نمو رأس المال</h3>
+                            <p>زيادة قيمة عقارك بمرور الوقت في مناطق واعدة.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="details-modal" id="property-details-modal" aria-hidden="true">
+        <div class="details-dialog" role="dialog" aria-modal="true" aria-labelledby="property-details-title">
+            <button type="button" class="details-close" id="property-details-close" aria-label="إغلاق">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="property-details-body"></div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active" data-view="home"><i class="fas fa-home"></i><span>الرئيسية</span></a>
+        <a href="#" class="nav-item" data-view="sold"><i class="fas fa-check-circle"></i><span>المباعة</span></a>
+        <a href="#" class="nav-item" data-view="investment"><i class="fas fa-chart-line"></i><span>الاستثمار</span></a>
+    </nav>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
